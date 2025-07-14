@@ -36,6 +36,6 @@ ii. `README.md` inside each week's folder explaining:
 ## ✍️ Author
 
 **Devansh Sharma**  
-B.Tech. CSE (Hons.) | Cluster-1 | Session 2024–25  
+B.Tech. CSE (Hons.) 
 
 ---
