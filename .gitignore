@@ -1,0 +1,19 @@
+# VS Code settings
+.vscode/
+**/.vscode/
+
+# Java build files
+*.class
+bin/
+build/
+out/
+target/
+
+# Logs and OS junk
+*.log
+.DS_Store
+Thumbs.db
+
+# Backup and temp files
+*.tmp
+*.bak
