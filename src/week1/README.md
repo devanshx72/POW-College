@@ -54,3 +54,26 @@ Finally, the answer is the minimum value in the last row of the grid.
 | Space      | O(1)          | (as we are modifying the array in place)
 
 ---
+
+# Question 3 – Subarray Sum Equals K
+
+---
+
+## Approach and Logic
+
+We iterate through all possible subarrays using two nested loops.  
+For each starting index, we keep adding the elements one by one and check whether the current sum becomes equal to `k`.  
+If yes, we increase the count.
+
+This method ensures that all continuous subarrays are checked and the count of those matching the target sum is returned.
+
+---
+
+## Time and Space Complexity
+
+| Complexity | Value    |
+|------------|----------|
+| Time       | O(n²)    |
+| Space      | O(1)     |
+
+---
