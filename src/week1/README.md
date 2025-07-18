@@ -61,19 +61,33 @@ Finally, the answer is the minimum value in the last row of the grid.
 
 ## Approach and Logic
 
+There are two approaches used to solve this problem:
+
+### 1. Using Nested Loops (Brute force approach)
+
 We iterate through all possible subarrays using two nested loops.  
 For each starting index, we keep adding the elements one by one and check whether the current sum becomes equal to `k`.  
 If yes, we increase the count.
 
 This method ensures that all continuous subarrays are checked and the count of those matching the target sum is returned.
 
+### 2. Using Prefix Sum and HashMap
+
+In this optimized approach, we maintain a running `sum` while traversing the array and use a `HashMap` to store the frequency of prefix sums encountered.
+
+- At each index, we check if `(sum - k)` exists in the map.
+- If it does, it means there are one or more subarrays ending at the current index whose sum is exactly `k`, so we add their count.
+- We then update the map with the current prefix sum for future lookups.
+
+This reduces unnecessary loops and allows for a more efficient solution.
+
 ---
 
 ## Time and Space Complexity
 
-| Complexity | Value    |
-|------------|----------|
-| Time       | O(n²)    |
-| Space      | O(1)     |
+| Approach                       | Time Complexity | Space Complexity |
+|--------------------------------|------------------|-------------------|
+| Nested Loops                   | O(n²)            | O(1)              |
+| Prefix Sum + HashMap (Optimized) | O(n)              | O(n)              |
 
 ---
